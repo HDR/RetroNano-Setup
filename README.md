@@ -10,7 +10,7 @@ Working
 Retropie menu and scripts
 Emulationstation
 Setup Script
-
+Dolphin (Gamecube Emulator)
 ```
 
 Not Working

@@ -274,7 +274,7 @@ function get_platform() {
     fi
 
     if ! fnExists "platform_${__platform}"; then
-        fatalError "Unknown platform - please manually set the __platform variable to one of the following: $(compgen -A function platform_ | cut -b10- | paste -s -d' ')"
+        __platform="generic-x11"
     fi
 
     platform_${__platform}
@@ -360,6 +360,13 @@ function platform_generic-x11() {
     __default_asflags=""
     __default_makeflags="-j$(nproc)"
     __platform_flags="x11 gl"
+}
+
+function platform_jetson-nano(){
+    __default_cflags="-O2"
+    __default_asflags=""
+    __default_makeflags="-j$(nproc)"
+    __default_flags="x11 gl"
 }
 
 function platform_armv7-mali() {

@@ -18,3 +18,9 @@ Not Working
 ```
 Retroarch is currently throwing a segfault
 ```
+
+Not Compatible
+-------------
+```
+Drastic
+```

@@ -16,7 +16,7 @@ Dolphin (Gamecube Emulator)
 Not Working
 -------------
 ```
-Retroarch is currently throwing a segfault
+Retroarch is currently throwing a segfault (Possibly compiled incorrectly?)
 ```
 
 Not Compatible

@@ -24,3 +24,8 @@ Not Compatible
 ```
 Drastic
 ```
+
+
+Notes
+-------------
+* The current way of getting it to install is very hacky and should be modified

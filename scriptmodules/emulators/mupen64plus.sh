@@ -31,7 +31,6 @@ function sources_mupen64plus() {
     isPlatform "vero4k" && commit=("master b75fdfb")
 
     local repos=(
-        "mupen64plus core ${commit[0]}"
         'mupen64plus ui-console'
         'mupen64plus audio-sdl'
         'mupen64plus input-sdl'
@@ -61,6 +60,7 @@ function sources_mupen64plus() {
     for repo in "${repos[@]}"; do
         repo=($repo)
         dir="$md_build/mupen64plus-${repo[1]}"
+        gitPullOrClone "$dir" https://github.com/MrHDR/mupen64plus-core
         gitPullOrClone "$dir" https://github.com/${repo[0]}/mupen64plus-${repo[1]} ${repo[2]} ${repo[3]}
     done
     gitPullOrClone "$md_build/GLideN64" https://github.com/gonetz/GLideN64.git
